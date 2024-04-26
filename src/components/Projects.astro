@@ -1,39 +1,53 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
+import Laravel from "./icons/Laravel.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#232323] text-white",
+    icon: Laravel,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+   BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#712cf9] text-white",
+    icon: Bootstrap,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "SSD Customer Experience",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Landing para destacar su producto uContact. Creado desde cero con Laravel, Bootstrap 5 y Vite. Animaciones logradas con Lottie.",
+    link: "https://cx.ssd.com.py/",
+    // github: "https://github.com/pheralb/svgl",
+    image: "/projects/ssd.webp",
+    tags: [TAGS.LARAVEL, TAGS.BOOTSTRAP],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Bepsa",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Sitio web institucional para la empresa Bepsa. Creada desde cero con Laravel y Bootstrap 5.",
+    link: "https://www.bepsa.com.py/",
+    image: "/projects/bepsa.webp",
+    tags: [TAGS.LARAVEL, TAGS.BOOTSTRAP],
+  },
+  {
+    title: "Luminotecnia",
+    description:
+      "E-commerce para la empresa Luminotecnia. Desarrollo basado en el diseño original en Figma, convirtiendo los elementos visuales en código funcional.",
+    link: "https://www.luminotecnia.com.py/",
+    image: "/projects/lumi.webp",
+    tags: [TAGS.LARAVEL, TAGS.BOOTSTRAP],
   },
 ]
 ---
@@ -43,8 +57,8 @@ const PROJECTS = [
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-200 lg:hover:border-gray-200 lg:hover:bg-gray-800/50">
+      <img alt="Screenshot" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
