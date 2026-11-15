@@ -1,22 +1,13 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
-  {
-    date: "Actualmente",
-    title: "Diseñadora web",
-    company: "Agencia Porta",
-    description:
-      "Desarrollé interfaces de usuario para sitios institucionales e ecommerce a medida con HTML, CSS y JavaScript. Optimicé sitios web para ofrecer la máxima velocidad y escalabilidad, garantizando la compatibilidad con distintos navegadores y dispositivos.",
-    // link: "https://porta.com.py/",
-  },
-]
+import experience from "@/data/experience.json"
 ---
 
-<ol class="relative mt-16">
+<ol class="relative mt-16" aria-label="Experiencia laboral">
   {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
+    experience.map((exp, i) => (
+      <li class="anim-fade-in" style={`animation-delay: ${i * 150}ms`}>
+        <ExperienceItem {...exp} />
       </li>
     ))
   }
