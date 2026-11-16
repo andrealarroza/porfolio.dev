@@ -1,0 +1,15 @@
+[
+    {
+        "date": "June 2024 - Present",
+        "title": "Mid-Level Software Engineer",
+        "company": "itti",
+        "description": "I develop and maintain frontend interfaces for corporate platforms, dashboards, and high-traffic systems using Next.js, TypeScript, and Tailwind CSS. I implement complex business logic, API integrations, and code refactoring to deliver scalable, maintainable, and high-performance applications.",
+        "current": true
+    },
+    {
+        "date": "February 2019 - May 2024",
+        "title": "Frontend Developer",
+        "company": "Agencia Porta",
+        "description": "I built user interfaces for corporate websites and custom e-commerce stores using HTML, CSS, and JavaScript. I optimized sites for maximum speed and scalability, ensuring cross-browser and multi-device compatibility."
+    }
+]

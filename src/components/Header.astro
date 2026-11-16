@@ -1,25 +1,32 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro"
+import { useTranslations, type Lang } from "@/i18n/utils"
+
+interface Props {
+  lang: Lang
+}
+const { lang } = Astro.props
+const t = useTranslations(lang)
+const home = lang === "es" ? "/" : "/en/"
 
 const navItems = [
   {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
+    title: t("nav.experience"),
+    label: t("section.experience.id"),
+    url: `${home}#${t("section.experience.id")}`,
   },
   {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
+    title: t("nav.projects"),
+    label: t("section.projects.id"),
+    url: `${home}#${t("section.projects.id")}`,
   },
   {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
+    title: t("nav.about"),
+    label: t("section.about.id"),
+    url: `${home}#${t("section.about.id")}`,
   },
   {
-    title: "Contacto",
-    label: "contacto",
+    title: t("nav.contact"),
+    label: "contact",
     url: "mailto:andrealarroza.dev@gmail.com",
   },
 ]
@@ -42,16 +49,13 @@ const navItems = [
         </a>
       ))
     }
-    <div class="ml-2 pl-2 border-l border-gray-300/30 dark:border-white/10">
-      <ThemeToggle />
-    </div>
   </nav>
 </header>
 
 <script>
   document.addEventListener("astro:page-load", () => {
     const sections = document.querySelectorAll("section")
-    const navItems = document.querySelectorAll("header nav a")
+    const navItems = document.querySelectorAll("header nav a.nav-link")
 
     const callback = (entries: any[]) => {
       entries.forEach((entry) => {

@@ -1,0 +1,22 @@
+{
+  "meta.title": "Andrea Larroza's Portfolio - Frontend Developer",
+  "meta.description": "Hire Andrea Larroza, a Frontend Developer, to build your next web application.",
+  "section.experience.id": "experience",
+  "section.experience.title": "Work experience",
+  "section.projects.id": "projects",
+  "section.projects.title": "Projects",
+  "section.about.id": "about-me",
+  "section.about.title": "About me",
+  "nav.experience": "Experience",
+  "nav.projects": "Projects",
+  "nav.about": "About me",
+  "nav.contact": "Contact",
+  "hero.available": "Available for work",
+  "hero.greeting": "Hi! I'm",
+  "hero.description": "<strong>Frontend Developer</strong> based in Asunción, Paraguay 🇵🇾, with over 7 years of experience in web development. I specialize in building modern, functional, and maintainable web applications and interfaces, with a strong focus on both user experience and code quality.",
+  "hero.social.label": "Social media and contact",
+  "hero.contact": "Contact me",
+  "about.p1": "Throughout my career, I've had the opportunity to work on projects for various brands and companies, building interfaces and digital experiences tailored to diverse needs. I started my professional journey at <strong>Agencia Web Porta</strong>, where I worked on a wide range of projects, from corporate websites to e-commerce platforms.",
+  "about.p2": "I'm currently part of the team at <strong>itti</strong> as a <strong>Mid-Level Software Engineer</strong>, focusing primarily on frontend development with Next.js, TypeScript, and Tailwind CSS. I build new features, integrate APIs, develop user interfaces, and optimize existing applications—always striving for cleaner, more maintainable, and more efficient code.",
+  "about.p3": "I particularly enjoy turning ideas and requirements into functional interfaces, paying close attention to user experience details, and continuously growing as a developer."
+}

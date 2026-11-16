@@ -1,0 +1,41 @@
+[
+  {
+    "title": "tuti",
+    "description": "Event ticketing platform built with Next.js, TypeScript, and Tailwind CSS.",
+    "image": "/projects/tuti.webp",
+    "tags": [
+      "NEXT",
+      "TAILWIND"
+    ]
+  },
+  {
+    "title": "SSD Customer Experience",
+    "description": "Product showcase landing page for uContact, built from scratch with Laravel, Bootstrap 5, and Vite, featuring Lottie animations.",
+    "link": "https://cx.ssd.com.py/",
+    "image": "/projects/ssd.webp",
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
+  },
+  {
+    "title": "Bepsa",
+    "description": "Corporate website built from scratch using Laravel and Bootstrap 5.",
+    "link": "https://www.bepsa.com.py/",
+    "image": "/projects/bepsa.webp",
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
+  },
+  {
+    "title": "Luminotecnia",
+    "description": "Custom e-commerce platform developed from Figma designs into a fully responsive frontend.",
+    "link": "https://www.luminotecnia.com.py/",
+    "image": "/projects/lumi.webp",
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
+  }
+]

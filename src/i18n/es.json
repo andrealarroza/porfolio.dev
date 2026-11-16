@@ -1,0 +1,26 @@
+{
+    "meta.title": "Porfolio de Andrea Larroza - Desarrolladora Frontend",
+    "meta.description": "Contrata a Andrea Larroza para crear tu aplicación web. Desarrolladora Frontend.",
+  
+    "section.experience.id": "experiencia",
+    "section.experience.title": "Experiencia laboral",
+    "section.projects.id": "proyectos",
+    "section.projects.title": "Proyectos",
+    "section.about.id": "sobre-mi",
+    "section.about.title": "Sobre mí",
+  
+    "nav.experience": "Experiencia",
+    "nav.projects": "Proyectos",
+    "nav.about": "Sobre mí",
+    "nav.contact": "Contacto",
+  
+    "hero.available": "Disponible para trabajar",
+    "hero.greeting": "Hola! soy",
+    "hero.description": "<strong>Frontend Developer</strong> de Asunción, Paraguay 🇵🇾, con más de 7 años de experiencia en desarrollo web. Me especializo en crear aplicaciones e interfaces web modernas, funcionales y mantenibles, cuidando tanto la experiencia de usuario como la calidad del código.",
+    "hero.social.label": "Redes sociales y contacto",
+    "hero.contact": "Contáctame",
+  
+    "about.p1": "A lo largo de mi trayectoria tuve la oportunidad de trabajar en proyectos para diferentes marcas y empresas, desarrollando interfaces y experiencias digitales adaptadas a distintas necesidades. Comencé mi camino profesional en <strong>Agencia Web Porta</strong>, donde trabajé en una amplia variedad de proyectos, desde sitios institucionales hasta plataformas de e-commerce.",
+    "about.p2": "Actualmente formo parte del equipo de <strong>itti</strong>, donde trabajo como <strong>SSR Software Engineer</strong>, enfocada principalmente en el desarrollo frontend con Next.js, TypeScript y Tailwind CSS. Participo en la creación de nuevas funcionalidades, integración de APIs, desarrollo de interfaces y mejora de aplicaciones existentes, buscando que el código sea cada vez más claro, mantenible y eficiente.",
+    "about.p3": "Disfruto especialmente transformar ideas y requerimientos en interfaces funcionales, cuidar los detalles de la experiencia de usuario y seguir creciendo como desarrolladora."
+  }

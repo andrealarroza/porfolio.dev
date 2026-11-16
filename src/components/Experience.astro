@@ -1,13 +1,21 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-import experience from "@/data/experience.json"
+import { getExperience } from "@/i18n/utils"
+import { useTranslations, type Lang } from "@/i18n/utils"
+
+interface Props {
+  lang: Lang
+}
+const { lang } = Astro.props
+const t = useTranslations(lang)
+const experience = getExperience(lang)
 ---
 
 <ol class="relative mt-16" aria-label="Experiencia laboral">
   {
     experience.map((exp, i) => (
       <li class="anim-fade-in" style={`animation-delay: ${i * 150}ms`}>
-        <ExperienceItem {...exp} />
+        <ExperienceItem {...exp} lang={lang}/>
       </li>
     ))
   }

@@ -1,6 +1,5 @@
 ---
-import LinkInline from "./LinkInline.astro"
-import ArrowRight from "./icons/ArrowRight.astro"
+import { useTranslations, type Lang } from "@/i18n/utils"
 
 interface Props {
   title: string
@@ -9,9 +8,11 @@ interface Props {
   link?: string
   date: string
   current?: boolean
+  lang: Lang
 }
 
-const { title, company, description, link, date, current = false } = Astro.props
+const { title, company, description, date, current = false, lang } = Astro.props
+const t = useTranslations(lang)
 ---
 
 <div
@@ -40,13 +41,5 @@ const { title, company, description, link, date, current = false } = Astro.props
   </div>
   <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
     {description}
-    {
-      link && (
-        <LinkInline href={link}>
-          Saber más sobre {company}{" "}
-          <ArrowRight class="size-5" aria-hidden="true" />
-        </LinkInline>
-      )
-    }
   </div>
 </div>
