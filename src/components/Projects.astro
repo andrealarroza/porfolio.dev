@@ -8,6 +8,15 @@ import ExternalLink from "./icons/ExternalLink.astro"
 import LinkButton from "./LinkButton.astro"
 import projectsData from "@/data/projects.json"
 
+interface Project {
+  title: string
+  description: string
+  image: string
+  tags: string[]
+  link?: string
+  github?: string
+}
+
 const TAGS: Record<string, { name: string; class: string; icon: any }> = {
   NEXT: {
     name: "Next.js",
@@ -31,7 +40,7 @@ const TAGS: Record<string, { name: string; class: string; icon: any }> = {
   },
 }
 
-const PROJECTS = projectsData.map((project) => ({
+const PROJECTS = (projectsData as Project[]).map((project) => ({
   ...project,
   tags: project.tags.map((key) => TAGS[key]),
 }))
