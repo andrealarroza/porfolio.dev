@@ -1,29 +1,41 @@
 [
   {
     "title": "tuti",
-    "description": "Plataforma para venta de tickets de eventos. Creada con Next.js, TypeScript y Tailwind CSS.",
+    "description": "Plataforma de venta de entradas para eventos, desarrollada con Next.js, TypeScript y Tailwind CSS.",
     "image": "/projects/tuti.webp",
-    "tags": ["NEXT", "TAILWIND"]
+    "tags": [
+      "NEXT",
+      "TAILWIND"
+    ]
   },
   {
     "title": "SSD Customer Experience",
-    "description": "Landing para destacar su producto uContact. Creado desde cero con Laravel, Bootstrap 5 y Vite. Animaciones logradas con Lottie.",
+    "description": "Landing page diseñada para destacar uContact. Desarrollada desde cero con Laravel, Bootstrap 5 y Vite, con animaciones interactivas en Lottie.",
     "link": "https://cx.ssd.com.py/",
     "image": "/projects/ssd.webp",
-    "tags": ["LARAVEL", "BOOTSTRAP"]
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
   },
   {
     "title": "Bepsa",
-    "description": "Sitio web institucional para la empresa Bepsa. Creada desde cero con Laravel y Bootstrap 5.",
+    "description": "Sitio web institucional creado desde cero con Laravel y Bootstrap 5.",
     "link": "https://www.bepsa.com.py/",
     "image": "/projects/bepsa.webp",
-    "tags": ["LARAVEL", "BOOTSTRAP"]
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
   },
   {
     "title": "Luminotecnia",
-    "description": "E-commerce para la empresa Luminotecnia. Desarrollo basado en el diseño original en Figma, convirtiendo los elementos visuales en código funcional.",
+    "description": "Plataforma de e-commerce desarrollada a partir de diseños en Figma para materializar la interfaz de usuario.",
     "link": "https://www.luminotecnia.com.py/",
     "image": "/projects/lumi.webp",
-    "tags": ["LARAVEL", "BOOTSTRAP"]
+    "tags": [
+      "LARAVEL",
+      "BOOTSTRAP"
+    ]
   }
 ]
