@@ -2,9 +2,20 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Laravel from "./icons/Laravel.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
 import ExternalLink from "./icons/ExternalLink.astro"
 import LinkButton from "./LinkButton.astro"
 import projectsData from "@/data/projects.json"
+
+interface Project {
+  title: string
+  description: string
+  image: string
+  tags: string[]
+  link?: string
+  github?: string
+}
 
 const TAGS: Record<string, { name: string; class: string; icon: any }> = {
   NEXT: {
@@ -17,9 +28,19 @@ const TAGS: Record<string, { name: string; class: string; icon: any }> = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#232323] text-white",
+    icon: Laravel,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#712cf9] text-white",
+    icon: Bootstrap,
+  },
 }
 
-const PROJECTS = projectsData.map((project) => ({
+const PROJECTS = (projectsData as Project[]).map((project) => ({
   ...project,
   tags: project.tags.map((key) => TAGS[key]),
 }))
