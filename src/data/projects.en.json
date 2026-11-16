@@ -1,7 +1,7 @@
 [
   {
     "title": "tuti",
-    "description": "Event ticketing platform built with Next.js, TypeScript, and Tailwind CSS.",
+    "description": "Contributed to the frontend development of Tuti, an event ticketing platform. Worked on features for ticket sales and event management, including reporting tools that helped operators and event organizers monitor sales and attendance metrics. Developed interactive data tables with filtering, sorting, and pagination, integrating APIs to deliver dynamic and user-friendly interfaces.",
     "image": "/projects/tuti.webp",
     "tags": [
       "NEXT",

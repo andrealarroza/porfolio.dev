@@ -1,7 +1,7 @@
 [
   {
     "title": "tuti",
-    "description": "Plataforma de venta de entradas para eventos, desarrollada con Next.js, TypeScript y Tailwind CSS.",
+    "description": "Contribuí al desarrollo frontend de Tuti, una plataforma de venta de entradas para eventos. Trabajé en funcionalidades para la venta de entradas y la gestión de eventos, incluyendo herramientas de reporte que permitieron a los operadores y organizadores de eventos monitorear las métricas de ventas y asistencia. Desarrollé tablas de datos interactivas con opciones de filtrado, ordenamiento y paginación, integrando APIs para ofrecer interfaces dinámicas e intuitivas.",
     "image": "/projects/tuti.webp",
     "tags": [
       "NEXT",

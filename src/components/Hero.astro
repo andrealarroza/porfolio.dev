@@ -6,6 +6,7 @@ import MailIcon from "@/components/icons/Mail.astro"
 import SparklesIcon from "@/components/icons/Sparkles.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import { useTranslations, type Lang } from "@/i18n/utils"
+import CvFile from "./icons/CvFile.astro"
 
 interface Props {
   lang: Lang
@@ -62,6 +63,10 @@ const t = useTranslations(lang)
     <SocialPill href="https://linkedin.com/in/andrea-larroza">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href={t("hero.cv")} target="_blank">
+      <CvFile class="size-4" />
+      CV
     </SocialPill>
   </nav>
 </div>
