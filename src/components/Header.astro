@@ -36,12 +36,12 @@ const navItems = [
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-4"
 >
   <nav
-    class="header-nav flex gap-x-1 px-4 py-1.5 text-sm font-medium rounded-full text-gray-600 dark:text-gray-300 justify-center items-center border border-transparent"
+  class="header-nav [--nav-bg:rgb(255_255_255/0.6)] dark:[--nav-bg:rgb(17_24_39/0.8)] flex gap-x-1 px-4 py-1.5 text-sm font-medium rounded-full text-gray-600 dark:text-gray-300 justify-center items-center border border-transparent"
   >
     {
       navItems.map((link) => (
         <a
-          class="nav-link relative text-xs sm:text-sm block px-1.5 sm:px-3 py-2 sm:py-1.5 rounded-full transition-colors duration-200 hover:text-yellow-500 dark:hover:text-yellow-400"
+          class="nav-link relative text-xs sm:text-sm block px-1.5 sm:px-3 py-2 sm:py-1.5 rounded-full transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
           aria-label={link.label}
           href={link.url}
         >
@@ -62,10 +62,10 @@ const navItems = [
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-yellow-500", "dark:text-yellow-400", "bg-yellow-400/10")
+              item.classList.add("text-pink-500", "dark:text-pink-400", "bg-pink-400/10")
               item.classList.remove("text-gray-600", "dark:text-gray-300")
             } else {
-              item.classList.remove("text-yellow-500", "dark:text-yellow-400", "bg-yellow-400/10")
+              item.classList.remove("text-pink-500", "dark:text-pink-400", "bg-pink-400/10")
               item.classList.add("text-gray-600", "dark:text-gray-300")
             }
           })
@@ -97,25 +97,31 @@ const navItems = [
 
 <style>
   .header-nav {
+    background-color: transparent;
     animation: nav-appear 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
   }
 
-  .header-nav {
-    @apply dark:bg-gray-900/80 bg-white/60;
-  }
-
-  .nav-link.text-yellow-500 {
-    @apply font-semibold;
+  .nav-link.text-pink-500 {
+    font-weight: 600;
   }
 
   @keyframes nav-appear {
-    0% {
-      @apply dark:bg-gray-900/0 bg-white/0 border-transparent shadow-none;
+    from {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+      backdrop-filter: blur(0);
     }
     to {
-      @apply shadow-lg ring-1 backdrop-blur-md ring-white/10 dark:ring-white/5 border-gray-200/20 dark:border-white/5;
+      background-color: var(--nav-bg);
+      border-color: rgb(156 163 175 / 0.2);
+      box-shadow:
+        0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1),
+        0 0 0 1px rgb(255 255 255 / 0.08);
+      backdrop-filter: blur(12px);
     }
   }
 </style>
