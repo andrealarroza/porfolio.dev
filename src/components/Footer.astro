@@ -1,12 +1,4 @@
 ---
-import LanguageSwitch from "./LanguageSwitch.astro"
-import { useTranslations, type Lang } from "@/i18n/utils"
-
-interface Props {
-  lang: Lang
-}
-const { lang } = Astro.props
-const t = useTranslations(lang)
 const currentYear = new Date().getFullYear()
 ---
 
@@ -21,12 +13,5 @@ const currentYear = new Date().getFullYear()
       >&copy; {currentYear}
       <a href="https://github.com/andrealarroza" class="hover:underline">Andrea Larroza</a>
     </span>
-    <ul
-      class="flex flex-wrap items-center text-sm font-medium dark:text-white/90 gap-2"
-    >
-    <li>
-      <LanguageSwitch lang={lang} />
-    </li>
-    </ul>
   </div>
 </footer>
