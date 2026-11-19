@@ -6,8 +6,9 @@ import Laravel from "./icons/Laravel.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
 import ExternalLink from "./icons/ExternalLink.astro"
 import LinkButton from "./LinkButton.astro"
-import { getProjects } from "@/i18n/utils"
+import { getProjects, useTranslations } from "@/i18n/utils"
 import type { Lang } from "@/i18n/utils"
+import TypeScript from "./icons/TypeScript.astro"
 
 interface Project {
   title: string
@@ -22,7 +23,7 @@ interface Props {
   lang: Lang
 }
 const { lang } = Astro.props
-
+const t = useTranslations(lang)
 const TAGS: Record<string, { name: string; class: string; icon: any }> = {
   NEXT: {
     name: "Next.js",
@@ -33,6 +34,11 @@ const TAGS: Record<string, { name: string; class: string; icon: any }> = {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#262626] text-white",
+    icon: TypeScript,
   },
   LARAVEL: {
     name: "Laravel",
@@ -91,7 +97,7 @@ const PROJECTS = (getProjects(lang) as Project[]).map((project) => ({
       {link && (
         <LinkButton href={link}>
           <ExternalLink class="size-4" />
-          Preview
+          {t("projects.goto")}
         </LinkButton>
       )}
     </footer>
