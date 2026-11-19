@@ -1,9 +1,11 @@
 ---
 import { useTranslations, type Lang } from "@/i18n/utils"
+import LanguageSwitch from "./LanguageSwitch.astro"
 
 interface Props {
   lang: Lang
 }
+
 const { lang } = Astro.props
 const t = useTranslations(lang)
 const home = lang === "es" ? "/" : "/en/"
@@ -23,11 +25,6 @@ const navItems = [
     title: t("nav.about"),
     label: t("section.about.id"),
     url: `${home}#${t("section.about.id")}`,
-  },
-  {
-    title: t("nav.contact"),
-    label: "contact",
-    url: "mailto:andrealarroza.dev@gmail.com",
   },
 ]
 ---
@@ -49,6 +46,9 @@ const navItems = [
         </a>
       ))
     }
+    <div class="ml-2 pl-2 border-l border-gray-300/30 dark:border-white/10">
+      <LanguageSwitch lang={lang} />
+    </div>
   </nav>
 </header>
 
