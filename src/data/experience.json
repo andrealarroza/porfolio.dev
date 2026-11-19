@@ -4,12 +4,14 @@
     "title": "SSR Software Engineer",
     "company": "itti",
     "description": "Desarrollo y mantengo interfaces frontend para plataformas corporativas, dashboards y sistemas de alta concurrencia utilizando Next.js, TypeScript y Tailwind CSS. Implemento lógica de negocio compleja, integración de APIs y refactorización de código para garantizar aplicaciones escalables, mantenibles y orientadas al rendimiento.",
-    "current": true
+    "current": true,
+    "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "React Hook Form", "Axios", "REST APIs", "GitHub", "Playwright", "Vitest", "AG Grid", "Recharts", "GitHub Actions", "Jira"]
   },
   {
     "date": "Febrero 2019 - Mayo 2024",
     "title": "Frontend Developer",
     "company": "Agencia Porta",
-    "description": "Desarrollé interfaces de usuario para sitios institucionales e ecommerce a medida con HTML, CSS y JavaScript. Optimicé sitios web para ofrecer la máxima velocidad y escalabilidad, garantizando la compatibilidad con distintos navegadores y dispositivos."
+    "description": "Desarrollé interfaces de usuario para sitios institucionales e ecommerce a medida con HTML, CSS y JavaScript. Optimicé sitios web para ofrecer la máxima velocidad y escalabilidad, garantizando la compatibilidad con distintos navegadores y dispositivos.",
+    "stack": ["HTML5", "CSS3", "JavaScript", "Vue.js", "PHP", "Laravel", "Bootstrap", "Github", "jQuery", "Webpack", "vite", "SEO", "Optimización de rendimiento", "MySQL", "Figma", "a11y", "Playwright"]
   }
 ]

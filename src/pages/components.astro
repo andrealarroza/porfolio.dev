@@ -2,6 +2,7 @@
 // import Badge from "@/components/Badge.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import SocialPill from "@/components/SocialPill.astro"
+import Pill from "@/components/Pill.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 
 import Layout from "@/layouts/Layout.astro"
@@ -19,7 +20,19 @@ import Layout from "@/layouts/Layout.astro"
     </article>
 
     <article class="mb-10">
-      <h1 class="mb-4 text-xl font-semibold">&lt SocialPill /&gt;</h1>
+      <h1 class="mb-4 text-xl font-semibold">&lt;Pill /&gt;</h1>
+
+      <div class="flex flex-wrap gap-2">
+        <Pill>HTML5</Pill>
+        <Pill>CSS</Pill>
+        <Pill>JavaScript</Pill>
+        <Pill>Figma</Pill>
+        <Pill>APIs REST</Pill>
+      </div>
+    </article>
+
+    <article class="mb-10">
+      <h1 class="mb-4 text-xl font-semibold">&lt;SocialPill /&gt;</h1>
 
       <div class="flex">
         <SocialPill href="https://linkedin.com/in/andrea-larroza">
